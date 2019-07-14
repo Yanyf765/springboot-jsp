@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Himobi运营后台</title>
+
+    <link rel="stylesheet" type="text/css" href="easyui/demo/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="easyui/demo/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="easyui/demo/demo/demo.css">
+    <script type="text/javascript" src="easyui/demo/jquery.min.js"></script>
+    <script type="text/javascript" src="easyui/demo/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="easyui/demo/locale/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript" src="js/queryHbase.js"></script>
+
+</head>
+<body class="easyui-layout">
+<!--  页面上方区域     -->
+<div region="north" split="true" style="height:60px;font-size: 26px;text-align: center;padding: 8px;background-color: #306091">
+    <table style="float:right;margin-top:-6px;">
+        <tr>
+            <td>
+                <a href="javascript:openUserInfo();" style="color:#fff;margin-left:3px;font-size: 12px;text-decoration:none;"><B>用户：${user_name}</B></a>
+                <span style="margin-left:3px;font-size: 12px">|</span>
+                <a href="javascript:openPasswordWindow();" style="color:#fff;margin-left:3px;font-size: 12px;text-decoration:none;"><B>密码修改</B></a>
+                <span style="margin-left:3px;font-size: 12px">|</span>
+                <a href="javascript:quit();" style="color:#fff;margin:5px;margin-left:3px;font-size: 12px;text-decoration:none;"><B>退出系统</B></a>
+                <span style="margin-left:5px;"></span>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!--  页面左边区域    -->
+<div region="west" style="width:200px" title="功能菜单" split="true">
+    <!-- 树形结构的功能列表 -->
+    <ul id="tree"></ul>
+</div>
+
+<!--  页面中间内容（主面板）区域     -->
+<div region="center">
+    <div class="easyui-tabs" fit="true" border="false" id="tabs">
+        <div title="首页"><h2>欢迎使用Himobi运营后台</h2></div>
+    </div>
+</div>
+
+<div region="south">
+    <div region="north" split="true" style="height:20px;font-size: 12px;text-align: center;padding: 8px;background-color: #dfe8f6">版权所有</div>
+</div>
+</body>
+</html>
