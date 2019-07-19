@@ -34,6 +34,8 @@
 	</table>
 	<script>
 		(function($){
+			debugger
+			console.log(1243);
 			function pagerFilter(data){
 				if ($.isArray(data)){	// is array
 					data = {
@@ -97,6 +99,7 @@
 									pageNumber:pageNum,
 									pageSize:pageSize
 								});
+								console.log(state.allRows);
 								dg.datagrid('loadData',state.allRows);
 							}
 						});
