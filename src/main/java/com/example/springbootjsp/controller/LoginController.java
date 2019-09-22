@@ -21,7 +21,7 @@ public class LoginController {
                                        HttpServletRequest request) {
         System.out.println("开始登陆");
         //设置永不过期
-        SecurityUtils.getSubject().getSession().setTimeout(-1000L);
+//        SecurityUtils.getSubject().getSession().setTimeout(-1000L);
         Subject subject = SecurityUtils.getSubject();
         SysUser sysUser;
         try {

@@ -1,6 +1,9 @@
 server:
   port: 9001
 spring:
+  redis:
+    host: localhost
+    port: 6379
   datasource:
     name: facesecretservice
     driver-class-name: com.mysql.cj.jdbc.Driver
